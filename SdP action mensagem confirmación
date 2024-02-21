@@ -1,0 +1,3 @@
+//Copia de formula que utilizo para encadenar texto al envío de mensaje por wts en el software de SdP Gestao.
+
+Concatenate("https://api.whatsapp.com/send?phone=","+",[Codigo país],[WhatsApp],"&text=",ENCODEURL(text(IF([_THISROW].[LENGUAGE]='',CONCATENATE('*Café Santiago da Praça:* Tempo de espera: ',[Tempo de espera],' min. Não se afaste! E envie SMS se mudar de planos.'),CONCATENATE('*Café Santiago da Praça:* Wait time: ',[Tempo de espera]," min. Don't go far & txt back to cancel.")))))
